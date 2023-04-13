@@ -1,0 +1,68 @@
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 -1px 4px #ccc;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar li {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    width: 100%;
+}
+
+.navbar li::before {
+    align-self: center;
+    font: 24px/32px 'Material Symbols Rounded';
+    padding: 0 20px;
+    position: absolute;
+    top: 12px;
+    z-index: -1;
+}
+
+.navbar li::before, .navbar a {
+    color: #666;
+}
+
+li.active a {
+    color: #00f;
+    font-weight: 500;
+}
+
+.navbar li a {
+    line-height: 46px;
+    padding-top: 34px;
+}
+
+li.active::before {
+    background-color: rgba(0, 0, 255, 0.08);
+    border-radius: 16px;
+    color: #00f;
+    font-variation-settings: 'FILL' 1;
+}
+
+li.home::before {
+    content: "home";
+}
+
+li.about::before {
+    content: "help";
+}
+
+li.archive::before {
+    content: "search";
+}
+
+li.contact::before {
+    content: "mail";
+}

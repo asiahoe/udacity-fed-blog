@@ -1,0 +1,99 @@
+@import url(fontawesome.css);
+@import url(brands.css);
+
+body {
+    font-family: 'SF Pro', 'Noto Sans', Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+}
+
+body > header, body > footer {
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'New York', 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 3em;
+    line-height: 56px;
+    margin: 0;
+}
+
+.card h2 {
+    line-height: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p a {
+    text-decoration: underline;
+}
+
+input {
+    font-size: 1em;
+}
+
+button {
+    color: #fff;
+    font-size: 1em;
+}
+
+.post {
+    margin-bottom: 1.5em;
+}
+
+.post > p, .post ul {
+    margin: 1em;
+    line-height: 1.5em;
+}
+
+figure {
+    color: #666;
+    font-size: 14px;
+    font-style: italic;
+    margin: 16px;
+}
+
+.tagline {
+    color: #666;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 1em;
+    margin: 0;
+}
+
+.category {
+    display: inline-flex;
+    column-gap: 0.25rem;
+    align-items: center;
+    font-size: .75em;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.category::before {
+    font: 20px 'Material Symbols Rounded';
+}
+
+.article .category::before {
+    content: "article";
+}
+
+.bookmark .category::before {
+    content: "bookmark";
+}
+
+.event .category::before {
+    content: "calendar_today";
+}
+
+.meta {
+    font-size: 0.875em;
+    margin: 0;
+}

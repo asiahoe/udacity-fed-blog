@@ -1,47 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Noteworthy: Musings of a perpetual student.</title>
+        <title>Noteworthy: Musings of a perpetual student</title>
+        <meta name="description" content="A personal blog website created for the Udacity Front End Nanodegree."> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,900&display=swap&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..24,400,0..1,-50..200">
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
     <body>
         <header>
             <h1>Noteworthy</h1>
-            <p class="tagline">Musings of a perpetual student.</p>
+            <p class="tagline">Musings of a perpetual student</p>
         </header>
-        <nav>
+        <nav class="navbar">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Archive</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="home active"><a href="#">Home</a></li>
+                <li class="about"><a href="#">About</a></li>
+                <li class="archive"><a href="#">Archive</a></li>
+                <li class="contact"><a href="#">Contact</a></li>
             </ul>
         </nav>
         <main>
-            <article class="article">
+            <article class="card article">
                 <p class="category">Article</p>
-                <h2><a href="#">Bring back blogs</a></h2>
-                <p class="date">Monday, April 10, 2023</p>
+                <h2><a href="posts/bring-back-blogs.html">Bring back blogs</a></h2>
+                <p class="meta">Monday, April 10, 2023</p>
                 <p>Social media is in crisis. Now more than ever, to save the internet, we must first save ourselves.</p>
-                <p><a href="#">Read more</a></p>
+                <p><a href="posts/bring-back-blogs.html">Read more</p>
             </article>
-            <article class="link">
-                <p class="category">Link</p>
+            <article class="card bookmark">
+                <p class="category">Bookmark</p>
                 <h2><a href="#">Design Systems</a></h2>
-                <p class="date">Friday, April 7, 2023</p>
+                <p class=metae">Friday, April 7, 2023</p>
                 <p>A publication by Figma, this resource can help get you up and running with building a design system of your own (with Figma, of course).</p>
                 <p><a href="#">Read more</a></p>
             </article>
-            <article class="event">
+            <article class="card event">
                 <p class="category">Event</p>
                 <h2><a href="#">Kinference</a></h2>
-                <p class="date">Friday, March 31, 2023</p>
+                <p class="meta">Friday, March 31, 2023</p>
                 <p>Brooklyn Beta was rebooted in the place it all started, and at long last, I got to attend!</p>
+                <p><a href="#">Read more</a></p>
+            </article>
+            <article class="card article">
+                <p class="category">Article</p>
+                <h2><a href="index.html">Layoffs</a></h2>
+                <p class=metae">Wednesday, January 11, 2023</p>
+                <p>What's with all the layoffs  in the tech industry?</p>
+                <p><a href="#">Read more</a></p>
+            </article>
+            <article class="card bookmark">
+                <p class="category">Bookmark</p>
+                <h2><a href="#">Readwise Reader</a></h2>
+                <p class="meta">Thursday, December 22, 2022</p>
+                <p>Reader is a new application from the team at Readwise that takes read-it-later to the next level.</p>
+                <p><a href="#">Read more</a></p>
+            </article>
+            <article class="card event">
+                <p class="category">Event</p>
+                <h2><a href="#">Clarity 2022</a></h2>
+                <p class="meta">Monday, November 14, 2022</p>
+                <p>Clarity is a design systems conference. I've attended 2018, spoke in 2020, attended remotely in 2021, and at long last, returned in person in New Orleans this past week!</p>
                 <p><a href="#">Read more</a></p>
             </article>
         </main>
         <footer>
-            <p>Copyright © 2023 Asia Hoe. All rights reserved.</p>
+            <h3>Mailing List</h3>
+            <form>
+                <input type="email" name="email" id="email" placeholder="email@mailprovider.com">
+                <button>Subscribe</button>
+            </form>
+            <p>Copyright © 2023 <a href="#">Asia Hoe</a>. All rights reserved.</p>
         </footer>
     </body>
 </html>
